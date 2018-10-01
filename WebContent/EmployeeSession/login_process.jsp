@@ -22,7 +22,7 @@
 	try{
 		Class.forName("com.mysql.jdbc.Driver");
 		conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/company?useSSL=false", "root",
-				"Sonemma08*");
+				"*******");
 		
 		String sqlQuery = "SELECT * FROM company.user where user_name='"+uName+"' and password='"+pass+"';";
 		stmt = conn.prepareStatement(sqlQuery);
